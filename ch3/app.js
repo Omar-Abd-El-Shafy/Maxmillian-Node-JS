@@ -1,5 +1,5 @@
 const http = require("http");
-
+console.log("hello");
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
     res.setHeader("content-type", "text/html");
@@ -17,8 +17,7 @@ const server = http.createServer((req, res) => {
   res.setHeader("content-type", "text/html");
   res.write("<html>");
   res.write("<body>");
-  res.write("<h1> HELLO </h1>"
-  );
+  res.write("<h1> HELLO </h1>");
 
   res.write("</body>");
   res.write("</html>");
